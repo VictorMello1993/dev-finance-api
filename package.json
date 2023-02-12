@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "knex:linux": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
+    "knex:windows": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
     "lint": "eslint src --ext .ts --fix"
   },
   "repository": {
@@ -28,6 +30,8 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "fastify": "^4.13.0"
+    "fastify": "^4.13.0",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.4"
   }
 }

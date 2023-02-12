@@ -3,6 +3,7 @@
   "parser": "@typescript-eslint/parser",
   "rules": {
     "quotes": [2, "double", {"avoidEscape": true}],
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "space-before-function-paren": "off"
   }
 }
